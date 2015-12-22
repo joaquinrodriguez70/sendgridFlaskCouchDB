@@ -6,14 +6,14 @@
 2.-Do an update 
 
 `sudo su
-yum update -y
-yum upgrade -y
-yum install -y gcc-c++
-yum install -y libxml2-python libxml2-devel
-yum install -y python-devel
-easy_install 	
-easy_install Flask
-yum install -y nginx`
+yum update -y 
+yum upgrade -y 
+yum install -y gcc-c++ 
+yum install -y libxml2-python libxml2-devel 
+yum install -y python-devel 
+easy_install 	 
+easy_install Flask 
+yum install -y nginx `
 
 3.-Change NGINX configuration file for proxy.
 As root 
