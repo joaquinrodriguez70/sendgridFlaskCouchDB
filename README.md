@@ -5,7 +5,7 @@
 
 2.-Do an update 
 
-`sudo su
+`sudo su  <br>
 yum update -y 
 yum upgrade -y 
 yum install -y gcc-c++ 
