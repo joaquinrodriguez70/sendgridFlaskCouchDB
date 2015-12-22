@@ -5,7 +5,8 @@
 
 2.-Do an update 
 
-`sudo su  <br>
+`sudo su  
+
 yum update -y 
 yum upgrade -y 
 yum install -y gcc-c++ 
@@ -104,6 +105,10 @@ cd js-1.8.5/js/src/
 sudo ./configure
 sudo make
 sudo make install 
+cd /usr/lib64
+ln -s /usr/local/lib/libmozjs185-1.0.a libmozjs185-1.0.a
+ln -s /usr/local/lib/libmozjs185.so.1.0 libmozjs185.so
+ln -s /usr/local/lib/libmozjs185.so.1.0 libmozjs185.so.1.0
 
 
 14.- Modify /etc/yum.repos.d/epel.repo. Under the section marked [epel] , change enabled=0 to enabled=1.
