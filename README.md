@@ -5,7 +5,7 @@
 
 2.-Do an update 
 
-sudo su
+`sudo su
 yum update -y
 yum upgrade -y
 yum install -y gcc-c++
@@ -13,24 +13,24 @@ yum install -y libxml2-python libxml2-devel
 yum install -y python-devel
 easy_install 	
 easy_install Flask
-yum install -y nginx
+yum install -y nginx`
 
 3.-Change NGINX configuration file for proxy.
 As root 
 
-vi /etc/nginx/nginx.conf
+`vi /etc/nginx/nginx.conf`
 Find the location / section, and change it to as follows:
 
-location / {
+`location / {
     include uwsgi_params;
     uwsgi_pass 127.0.0.1:10080;
-}
+}`
 
 
 4.-Start NginX
 
-service nginx start
-chkconfig nginx on
+`service nginx start
+chkconfig nginx on`
 	
 	
 5.- Note that user directories are on  /usr/share/nginx/  but we're going to use a python script in  the "ec2-user" folder
@@ -39,12 +39,12 @@ chkconfig nginx on
 
 6.-Install Python 
 
-sudo yum install python34
-sudo yum install python34-devel
+`sudo yum install python34
+sudo yum install python34-devel`
 
 7.-Download a script to install Flask  as ec2-user
 
-mkdir ~/pythonsetup
+`mkdir ~/pythonsetup
 
 cd ~/pythonsetup
 
@@ -58,7 +58,7 @@ sudo /usr/local/bin/pip3 install uwsgi
 
 sudo /usr/local/bin/pip3 install couchdb
 
-sudo /usr/local/bin/pip3 install request
+sudo /usr/local/bin/pip3 install request`
 
 8.- Copy pysendgrid.py to ~/pysendgrid
 
